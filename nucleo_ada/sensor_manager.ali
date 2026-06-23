@@ -21,7 +21,7 @@ RV NO_OBSOLESCENT_FEATURES
 RV MAX_TASKS=1
 RV MAX_ENTRY_QUEUE_LENGTH=1+
 
-U sensor_manager%b	sensor_manager.adb	f4fd8e54 OO PK
+U sensor_manager%b	sensor_manager.adb	9b7107bb OO PK
 W ada%s			ada.ads			ada.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
@@ -74,14 +74,14 @@ D a-tags.ads		20260501130736 2dbf449c ada.tags%s
 D a-textio.ads		20260501130736 34ef47de ada.text_io%s
 D a-unccon.ads		20260501130736 0e9b276f ada.unchecked_conversion%s
 D a-uncdea.ads		20260501130736 c3a8ac65 ada.unchecked_deallocation%s
-D f1_types.ads		20260622231500 e256a974 f1_types%s
+D f1_types.ads		20260623201059 e256a974 f1_types%s
 D gnat.ads		20260501130736 b5988c27 gnat%s
 D g-socket.ads		20260501130736 a4cab028 gnat.sockets%s
 D interfac.ads		20260501130736 9111f9c1 interfaces%s
 D i-c.ads		20260501130736 dbdd3be7 interfaces.c%s
 D i-cstrea.ads		20260501130736 ffd01b9d interfaces.c_streams%s
-D sensor_manager.ads	20260623010208 8dfbd9d4 sensor_manager%s
-D sensor_manager.adb	20260623161406 972a0cdc sensor_manager%b
+D sensor_manager.ads	20260623201059 8dfbd9d4 sensor_manager%s
+D sensor_manager.adb	20260623201059 f8a68533 sensor_manager%b
 D system.ads		20260501130736 e2b7c99d system%s
 D s-atacco.ads		20260501130736 5868e3ba system.address_to_access_conversions%s
 D s-atocou.ads		20260501130736 dc18efc3 system.atomic_counters%s

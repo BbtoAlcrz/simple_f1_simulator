@@ -19,7 +19,7 @@ RV NO_OBSOLESCENT_FEATURES
 RV MAX_TASKS=1
 RV MAX_ENTRY_QUEUE_LENGTH=1+
 
-U comm_manager%b	comm_manager.adb	a7e77d3a OO PK
+U comm_manager%b	comm_manager.adb	f528b468 OO PK
 W ada%s			ada.ads			ada.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
@@ -32,7 +32,7 @@ W gnat.sockets%s	g-socket.adb		g-socket.ali
 W metrics_db%s		metrics_db.adb		metrics_db.ali  AD
 W sensor_manager%s	sensor_manager.adb	sensor_manager.ali  AD
 Z system%s		system.ads		system.ali
-Z system.concat_5%s	s-conca5.adb		s-conca5.ali
+Z system.concat_7%s	s-conca7.adb		s-conca7.ali
 Z system.finalization_primitives%s  s-finpri.adb  s-finpri.ali
 Z system.img_flt%s	s-imgflt.ads		s-imgflt.ali
 Z system.img_int%s	s-imgint.ads		s-imgint.ali
@@ -67,20 +67,20 @@ D a-stuten.ads		20260501130736 c6ced0ae ada.strings.utf_encoding%s
 D a-tags.ads		20260501130736 2dbf449c ada.tags%s
 D a-unccon.ads		20260501130736 0e9b276f ada.unchecked_conversion%s
 D a-uncdea.ads		20260501130736 c3a8ac65 ada.unchecked_deallocation%s
-D comm_manager.ads	20260623145255 73dac566 comm_manager%s
-D comm_manager.adb	20260623161458 91e2c486 comm_manager%b
-D f1_types.ads		20260622231500 e256a974 f1_types%s
+D comm_manager.ads	20260623201059 73dac566 comm_manager%s
+D comm_manager.adb	20260623201827 c32d0dd4 comm_manager%b
+D f1_types.ads		20260623201059 e256a974 f1_types%s
 D gnat.ads		20260501130736 b5988c27 gnat%s
 D g-socket.ads		20260501130736 a4cab028 gnat.sockets%s
 D interfac.ads		20260501130736 9111f9c1 interfaces%s
 D i-c.ads		20260501130736 dbdd3be7 interfaces.c%s
-D metrics_db.ads	20260623144947 94af6757 metrics_db%s
-D sensor_manager.ads	20260623010208 8dfbd9d4 sensor_manager%s
+D metrics_db.ads	20260623201059 94af6757 metrics_db%s
+D sensor_manager.ads	20260623201059 8dfbd9d4 sensor_manager%s
 D system.ads		20260501130736 e2b7c99d system%s
 D s-atacco.ads		20260501130736 5868e3ba system.address_to_access_conversions%s
 D s-atocou.ads		20260501130736 dc18efc3 system.atomic_counters%s
 D s-c_time.ads		20260501130736 e502d0c0 system.c_time%s
-D s-conca5.ads		20260501130736 4099d1db system.concat_5%s
+D s-conca7.ads		20260501130736 09fd419f system.concat_7%s
 D s-exctab.ads		20260501130736 91bef6ef system.exception_table%s
 D s-finpri.ads		20260501130736 5970d55a system.finalization_primitives%s
 D s-finroo.ads		20260501130736 0a7c3ed4 system.finalization_root%s
@@ -139,37 +139,38 @@ X 6 a-reatim.ads
 57O9*Time<duration> 19|11r17
 62O9*Time_Span<duration>
 69V13*Clock{57O9} 19|11s25
-73V14*"+"{57O9} 19|58s29
+73V14*"+"{57O9} 19|60s29
 X 8 a-stream.ads
 36K13*Streams 90e16 19|4w10 4r29
 42M9*Stream_Element
-44I9*Stream_Element_Offset<long_long_integer> 19|67r23 69r49 70r49
-54A9*Stream_Element_Array(42M9)<44I9> 19|65r23 66r23
+44I9*Stream_Element_Offset<long_long_integer> 19|69r23 71r49 72r49
+54A9*Stream_Element_Array(42M9)<44I9> 19|67r23 68r23
 X 18 comm_manager.ads
-3K9*Comm_Manager 13l5 13e17 19|8b14 80l5 80t17
-6T14*Comm_Task 8l8 8e17 11r18 19|10b14 78l8 78t17
+3K9*Comm_Manager 13l5 13e17 19|8b14 82l5 82t17
+6T14*Comm_Task 8l8 8e17 11r18 19|10b14 80l8 80t17
 11t4*Comm_Worker{6T14}
 X 19 comm_manager.adb
-11o7 Next_Tx{6|57O9} 58m10 58r21 76r22
-12a7 Packet{20|20A9} 25r38 59m10
-14i7 Sock{22|413I9} 49m22 72r26 73r26
-15r7 Addr_Vol{22|594R9} 51m7 52m7 72r47
-16r7 Addr_Ing{22|594R9} 54m7 55m7 73r47
-19V16 Armar_JSON_Volante{string} 19b16 38l11 38t29 63s42
+11o7 Next_Tx{6|57O9} 60m10 60r21 78r22
+12a7 Packet{20|20A9} 25r38 61m10
+14i7 Sock{22|413I9} 51m22 74r26 75r26
+15r7 Addr_Vol{22|594R9} 53m7 54m7 74r47
+16r7 Addr_Ing{22|594R9} 56m7 57m7 75r47
+19V16 Armar_JSON_Volante{string} 19b16 38l11 38t29 65s42
 20a10 Stat{string} 37r34
 23V19 F{string} 23b19 23>22 26l14 26t15 28s39 29s33 30s37 31s35 32s35 33s35
 . 34s35 35s42 36s35
 23e22 S{20|6E9} 25r45
-40V16 Armar_JSON_Ingeniero{string} 40b16 44l11 44t31 64s42
-63a13 Vol_Msg{string} 65r50 69r22 69r92
-64a13 Ing_Msg{string} 66r50 70r22 70r92
-65a13 Vol_Arr{8|54A9} 69m41 72r32
-66a13 Ing_Arr{8|54A9} 70m41 73r32
-67i13 Last{8|44I9} 72m41 73m41
-69i17 I{integer} 69r71 69r100
-70i17 I{integer} 70r71 70r100
+40V16 Armar_JSON_Ingeniero{string} 40b16 46l11 46t31 66s42
+41a10 Stat{string} 45r34
+65a13 Vol_Msg{string} 67r50 71r22 71r92
+66a13 Ing_Msg{string} 68r50 72r22 72r92
+67a13 Vol_Arr{8|54A9} 71m41 74r32
+68a13 Ing_Arr{8|54A9} 72m41 75r32
+69i13 Last{8|44I9} 74m41 75m41
+71i17 I{integer} 71r71 71r100
+72i17 I{integer} 72r71 72r100
 X 20 f1_types.ads
-3K9*F1_Types 19|1w6 1r20 12r17 23r26 58r31 20|42e13
+3K9*F1_Types 19|1w6 1r20 12r17 23r26 60r31 20|42e13
 6E9*Sensor_Id 19|23r35 20|8e53
 7n7*ENGINE_TEMP{6E9} 19|28r41
 7n20*TYRE_FL{6E9} 19|31r37
@@ -183,33 +184,33 @@ X 20 f1_types.ads
 10F9*Sensor_Value<float>
 16f7*Value{10F9} 19|25r48
 20A9*TelemetryArray(13R9)<6E9> 19|12r26
-23n25*NORMAL{23E9} 19|20r61
-40o4*COMM_PERIOD{6|62O9} 19|58r40
+23n25*NORMAL{23E9} 19|20r61 41r61
+40o4*COMM_PERIOD{6|62O9} 19|60r40
 X 21 gnat.ads
 40K9*GNAT 19|3r6 3r25 21|63e9
 X 22 g-socket.ads
 56K14*Sockets 19|3w11 3r30 22|1605e17
-380U14*Initialize 19|48s7
+380U14*Initialize 19|50s7
 413I9*Socket_Type<integer> 19|14r20
-473n25*Family_Inet{473E9} 19|49r28
-481n38*Socket_Datagram{481E9} 19|49r41
+473n25*Family_Inet{473E9} 19|51r28
+481n38*Socket_Datagram{481E9} 19|51r41
 496I9*Port_Type<integer>
 594R9*Sock_Addr_Type 19|15r20 16r20 22|604e14
-599r13*Addr{521R9} 19|51m16 54m16
-600i13*Port{496I9} 19|52m16 55m16
-660V13*Addresses{521R9} 19|51s24 54s24
-677V13*Get_Host_By_Name{643R9} 19|51s35 54s35
-1125U14*Create_Socket 19|49s7
-1297U14*Send_Socket 19|72s13 73s13
+599r13*Addr{521R9} 19|53m16 56m16
+600i13*Port{496I9} 19|54m16 57m16
+660V13*Addresses{521R9} 19|53s24 56s24
+677V13*Get_Host_By_Name{643R9} 19|53s35 56s35
+1125U14*Create_Socket 19|51s7
+1297U14*Send_Socket 19|74s13 75s13
 X 25 metrics_db.ads
-4K9*Metrics_DB 19|6w6 20r31 42r45 43r45 25|18e15
-5w14*Stats 19|20r42 42r56 43r56
-10V16 Get_TEP_us{integer} 19|42s62
-11V16 Get_TRP_us{integer} 19|43s62
-12V16 Get_Status{20|23E9} 19|20s48
+4K9*Metrics_DB 19|6w6 20r31 41r31 43r45 44r45 25|18e15
+5w14*Stats 19|20r42 41r42 43r56 44r56
+10V16 Get_TEP_us{integer} 19|43s62
+11V16 Get_TRP_us{integer} 19|44s62
+12V16 Get_Status{20|23E9} 19|20s48 41s48
 X 26 sensor_manager.ads
-4K9*Sensor_Manager 19|5w6 59r21 26|17e19
-15V13*Read_All_Sensors{20|20A9} 19|59s36
+4K9*Sensor_Manager 19|5w6 61r21 26|17e19
+15V13*Read_All_Sensors{20|20A9} 19|61s36
 X 27 system.ads
 37K9*System 18|1w6 7r24 27|155e11
 67M9*Address

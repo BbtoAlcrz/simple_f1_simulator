@@ -36,17 +36,17 @@ D a-stuten.ads		20260501130736 c6ced0ae ada.strings.utf_encoding%s
 D a-tags.ads		20260501130736 2dbf449c ada.tags%s
 D a-textio.ads		20260501130736 34ef47de ada.text_io%s
 D a-unccon.ads		20260501130736 0e9b276f ada.unchecked_conversion%s
-D alert_controller.ads	20260623012002 90bcc09a alert_controller%s
-D car_ecu.ads		20260622233150 71eec82f car_ecu%s
-D comm_manager.ads	20260623145255 73dac566 comm_manager%s
-D f1_main.adb		20260623145506 f074b4c8 f1_main%b
-D f1_types.ads		20260622231500 e256a974 f1_types%s
+D alert_controller.ads	20260623201059 90bcc09a alert_controller%s
+D car_ecu.ads		20260623201059 71eec82f car_ecu%s
+D comm_manager.ads	20260623201059 73dac566 comm_manager%s
+D f1_main.adb		20260623201059 f074b4c8 f1_main%b
+D f1_types.ads		20260623201059 e256a974 f1_types%s
 D interfac.ads		20260501130736 9111f9c1 interfaces%s
 D i-c.ads		20260501130736 dbdd3be7 interfaces.c%s
 D i-cstrea.ads		20260501130736 ffd01b9d interfaces.c_streams%s
-D metrics_db.ads	20260623144947 94af6757 metrics_db%s
-D safety_monitor.ads	20260623011704 8059b2d0 safety_monitor%s
-D sensor_manager.ads	20260623010208 8dfbd9d4 sensor_manager%s
+D metrics_db.ads	20260623201059 94af6757 metrics_db%s
+D safety_monitor.ads	20260623201059 8059b2d0 safety_monitor%s
+D sensor_manager.ads	20260623201059 8dfbd9d4 sensor_manager%s
 D system.ads		20260501130736 e2b7c99d system%s
 D s-atacco.ads		20260501130736 5868e3ba system.address_to_access_conversions%s
 D s-c_time.ads		20260501130736 e502d0c0 system.c_time%s
@@ -78,7 +78,7 @@ D s-tassta.ads		20260501130736 cca55c94 system.tasking.stages%s
 D s-traent.ads		20260501130736 c81cbf8c system.traceback_entries%s
 D s-unstyp.ads		20260501130736 fa2a7f59 system.unsigned_types%s
 D s-wchcon.ads		20260501130736 d9032363 system.wch_con%s
-D threshold_db.ads	20260622234703 af2589b8 threshold_db%s
+D threshold_db.ads	20260623201059 af2589b8 threshold_db%s
 G a e
 G c Z b b [f1_main standard 11 11 none]
 G r c none [f1_main standard 11 11 none] [initialize threshold_db 4 14 none]

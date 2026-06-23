@@ -5,7 +5,7 @@ RN
 RV NO_FLOATING_POINT
 RV NO_IO
 
-U threshold_db%b	threshold_db.adb	06057ad0 NE OO PK
+U threshold_db%b	threshold_db.adb	a0a9e09b NE OO PK
 W ada%s			ada.ads			ada.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
@@ -25,7 +25,7 @@ D a-stuten.ads		20260501130736 c6ced0ae ada.strings.utf_encoding%s
 D a-tags.ads		20260501130736 2dbf449c ada.tags%s
 D a-textio.ads		20260501130736 34ef47de ada.text_io%s
 D a-unccon.ads		20260501130736 0e9b276f ada.unchecked_conversion%s
-D f1_types.ads		20260622231500 e256a974 f1_types%s
+D f1_types.ads		20260623201059 e256a974 f1_types%s
 D interfac.ads		20260501130736 9111f9c1 interfaces%s
 D i-c.ads		20260501130736 dbdd3be7 interfaces.c%s
 D i-cstrea.ads		20260501130736 ffd01b9d interfaces.c_streams%s
@@ -55,48 +55,48 @@ D s-taskin.ads		20260501130736 e3b5765b system.tasking%s
 D s-traent.ads		20260501130736 c81cbf8c system.traceback_entries%s
 D s-unstyp.ads		20260501130736 fa2a7f59 system.unsigned_types%s
 D s-wchcon.ads		20260501130736 d9032363 system.wch_con%s
-D threshold_db.ads	20260622234703 af2589b8 threshold_db%s
-D threshold_db.adb	20260623000614 7f991dc2 threshold_db%b
+D threshold_db.ads	20260623201059 af2589b8 threshold_db%s
+D threshold_db.adb	20260623201059 d9358789 threshold_db%b
 G a e
 G c Z s b [initialize threshold_db 4 14 none]
 G c Z s b [get_limit threshold_db 6 13 none]
 G c Z s b [set_limit threshold_db 8 14 none]
 X 1 ada.ads
-18K9*Ada 22e8 43|1r6 23r7
+18K9*Ada 22e8 43|1r6 22r7
 X 10 a-textio.ads
-58K13*Text_IO 785e16 43|1w10 23r11
-565U14*Put_Line 43|23s19
+58K13*Text_IO 785e16 43|1w10 22r11
+565U14*Put_Line 43|22s19
 X 12 f1_types.ads
-3K9*F1_Types 42e13 42|1w6 6r31 6r58 8r32 8r63 43|2w6 3r5 8r9 13r11 14r11
-. 15r11 16r11 17r11 18r11 19r11 20r11 21r11 26r31 26r58 31r32 31r63
-6E9*Sensor_Id 8e53 42|6r40 8r41 43|26r40 31r41
-7n7*ENGINE_TEMP{6E9} 43|13r20
-7n20*TYRE_FL{6E9} 43|14r20
-7n29*TYRE_FR{6E9} 43|15r20
-7n38*TYRE_RL{6E9} 43|16r20
-7n47*TYRE_RR{6E9} 43|17r20
-8n7*BRAKE_PRESSURE{6E9} 43|18r20
-8n23*FUEL_FLOW{6E9} 43|19r20
-8n34*G_FORCE{6E9} 43|20r20
-8n43*GPS_SPEED{6E9} 43|21r20
+3K9*F1_Types 42e13 42|1w6 6r31 6r58 8r32 8r63 43|2w6 2r20 7r9 12r11 13r11
+. 14r11 15r11 16r11 17r11 18r11 19r11 20r11 25r31 25r58 30r32 30r63
+6E9*Sensor_Id 8e53 42|6r40 8r41 43|25r40 30r41
+7n7*ENGINE_TEMP{6E9} 43|12r20
+7n20*TYRE_FL{6E9} 43|13r20
+7n29*TYRE_FR{6E9} 43|14r20
+7n38*TYRE_RL{6E9} 43|15r20
+7n47*TYRE_RR{6E9} 43|16r20
+8n7*BRAKE_PRESSURE{6E9} 43|17r20
+8n23*FUEL_FLOW{6E9} 43|18r20
+8n34*G_FORCE{6E9} 43|19r20
+8n43*GPS_SPEED{6E9} 43|20r20
 10F9*Sensor_Value<float>
-26R9*Threshold_Record 29e14 42|6r67 8r72 43|26r67 31r72
-27f7*Upper_Limit{10F9} 43|13m40 14m40 15m40 16m40 17m40 18m40 19m40 20m40
-. 21m40
-28f7*Lower_Limit{10F9} 43|13m62 14m62 15m62 16m62 17m62 18m62 19m62 20m62
-. 21m62
-31A9*Threshold_Map(26R9)<6E9> 43|8r18
+26R9*Threshold_Record 29e14 42|6r67 8r72 43|25r67 30r72
+27f7*Upper_Limit{10F9} 43|12m40 13m40 14m40 15m40 16m40 17m40 18m40 19m40
+. 20m40
+28f7*Lower_Limit{10F9} 43|12m62 13m62 14m62 15m62 16m62 17m62 18m62 19m62
+. 20m62
+31A9*Threshold_Map(26R9)<6E9> 43|7r18
 X 32 s-stausa.ads
 206U14*Initialize 207i<c,__gnat_stack_usage_initialize>22
 265U14*Output_Results 269i<c,__gnat_stack_usage_output_results>22
 X 42 threshold_db.ads
-3K9*Threshold_DB 9l5 9e17 43|5b14 36l5 36t17
-4U14*Initialize 43|10b14 24l8 24t18
-6V13*Get_Limit{12|26R9} 6>24 43|26b13 29l8 29t17
-6e24 S{12|6E9} 43|26b24 28r18
-8U14*Set_Limit 8>25 8>52 43|31b14 34l8 34t17
-8e25 S{12|6E9} 43|31b25 33r11
-8r52 Limit{12|26R9} 43|31b52 33r17
+3K9*Threshold_DB 9l5 9e17 43|4b14 35l5 35t17
+4U14*Initialize 43|9b14 23l8 23t18
+6V13*Get_Limit{12|26R9} 6>24 43|25b13 28l8 28t17
+6e24 S{12|6E9} 43|25b24 27r18
+8U14*Set_Limit 8>25 8>52 43|30b14 33l8 33t17
+8e25 S{12|6E9} 43|30b25 32r11
+8r52 Limit{12|26R9} 43|30b52 32r17
 X 43 threshold_db.adb
-8a4 DB{12|31A9} 13m7 14m7 15m7 16m7 17m7 18m7 19m7 20m7 21m7 28r14 33m7
+7a4 DB{12|31A9} 12m7 13m7 14m7 15m7 16m7 17m7 18m7 19m7 20m7 27r14 32m7
 

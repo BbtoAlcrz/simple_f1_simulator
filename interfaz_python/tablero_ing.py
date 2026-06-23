@@ -49,16 +49,38 @@ def escuchar_metricas():
             root.after(0, actualizar_metricas_gui, metricas)
         except Exception: pass
 
-def actualizar_metricas_gui(metricas):
-    lbl_tep_val.config(text=f"{metricas.get('TEP', 0)} microsegundos")
-    lbl_trp_val.config(text=f"{metricas.get('TRP', 0)} microsegundos")
+is_blinking = False
+blink_state = True
 
-    # ¡Lógica nueva para la alerta visual del ingeniero!
-    estado = metricas.get("STATUS", "NORMAL")
-    if estado == "CRITICAL":
+def alternar_alerta_ingeniero():
+    """Función recursiva que hace parpadear la barra del ingeniero"""
+    global is_blinking, blink_state
+    if not is_blinking:
+        return
+        
+    if blink_state:
         frame_alerta.config(bg=ACCENT_RED)
         lbl_alerta.config(text="¡ALERTA MGU: FALLA CRÍTICA!", bg=ACCENT_RED, fg="#11111b")
     else:
+        frame_alerta.config(bg=BG_COLOR)
+        lbl_alerta.config(text="¡ALERTA MGU: FALLA CRÍTICA!", bg=BG_COLOR, fg=ACCENT_RED)
+        
+    blink_state = not blink_state
+    root.after(400, alternar_alerta_ingeniero)
+
+def actualizar_metricas_gui(metricas):
+    global is_blinking
+    
+    lbl_tep_val.config(text=f"{metricas.get('TEP', 0)} microsegundos")
+    lbl_trp_val.config(text=f"{metricas.get('TRP', 0)} microsegundos")
+
+    estado = metricas.get("STATUS", "NORMAL")
+    if estado == "CRITICAL":
+        if not is_blinking:
+            is_blinking = True
+            alternar_alerta_ingeniero()
+    else:
+        is_blinking = False
         frame_alerta.config(bg=BG_COLOR)
         lbl_alerta.config(text="SISTEMA NOMINAL", bg=BG_COLOR, fg=ACCENT_GREEN)
 

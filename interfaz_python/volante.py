@@ -20,13 +20,34 @@ FONT_TITLE = ("Cascadia Code", 12)
 FONT_DATA = ("Cascadia Code", 26, "bold")
 FONT_ALERT = ("Cascadia Code", 16, "bold")
 
+is_blinking = False
+blink_state = True
+
+def alternar_alerta_volante():
+    """Función recursiva que hace parpadear la barra superior cada 400ms"""
+    global is_blinking, blink_state
+    if not is_blinking:
+        return
+        
+    if blink_state:
+        frame_alerta.config(bg=RED)
+        lbl_alerta.config(text="¡MGU OFFLINE - FALLA CRÍTICA!", bg=RED, fg="#11111b")
+    else:
+        frame_alerta.config(bg=BG_COLOR)
+        lbl_alerta.config(text="¡MGU OFFLINE - FALLA CRÍTICA!", bg=BG_COLOR, fg=RED)
+        
+    blink_state = not blink_state
+    root.after(400, alternar_alerta_volante) # Velocidad del parpadeo (400ms)
+
 def actualizar_tablero(datos):
+    global is_blinking
+    
     temp = datos.get('ENGINE_TEMP', 0.0)
     speed = datos.get('SPEED', 0)
     fuel = datos.get('FUEL_FLOW', 0.0)
     brakes = datos.get('BRAKE_PRESSURE', 0.0)
     g_force = datos.get('G_FORCE', 0.0)
-    tyre = datos.get('TYRE_FL', 0.0) # Tomamos el FL como referencia visual
+    tyre = datos.get('TYRE_FL', 0.0)
 
     lbl_fuel_val.config(text=f"{fuel:.1f} KG/H")
     lbl_speed_val.config(text=f"{speed:.0f} KM/H")
@@ -35,22 +56,25 @@ def actualizar_tablero(datos):
     lbl_tyres_val.config(text=f"{tyre:.1f} °C")
     lbl_g_val.config(text=f"{g_force:.1f} G")
 
-    # Reseteo de colores
+    # Reseteo de colores de los números
     for lbl in [lbl_fuel_val, lbl_speed_val, lbl_temp_val, lbl_brakes_val, lbl_tyres_val, lbl_g_val]:
         lbl.config(fg=TEXT_COLOR)
 
     estado = datos.get("STATUS", "NORMAL")
     if estado == "CRITICAL":
-        frame_alerta.config(bg=RED)
-        lbl_alerta.config(text="¡MGU OFFLINE - FALLA CRÍTICA!", bg=RED, fg="#11111b")
+        # Si no estaba parpadeando antes, encendemos el bucle
+        if not is_blinking:
+            is_blinking = True
+            alternar_alerta_volante()
         
-        # Color inteligente basado en tu Threshold_DB
         if temp > 120.0 or temp < 80.0: lbl_temp_val.config(fg=RED)
         if fuel > 100.0: lbl_fuel_val.config(fg=RED)
         if brakes > 150.0: lbl_brakes_val.config(fg=RED)
         if tyre > 110.0 or tyre < 70.0: lbl_tyres_val.config(fg=RED)
         if g_force > 6.0 or g_force < -6.0: lbl_g_val.config(fg=RED)
     else:
+        # Si volvemos a la normalidad, apagamos el parpadeo
+        is_blinking = False
         frame_alerta.config(bg=BG_COLOR)
         lbl_alerta.config(text="SISTEMA NOMINAL", bg=BG_COLOR, fg=GREEN)
 

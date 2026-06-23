@@ -1,6 +1,4 @@
 V "GNAT Lib v16"
-A -mtune=generic
-A -march=x86-64
 P ZX
 
 RN
@@ -41,9 +39,9 @@ D a-sttebu.ads		20260501130736 f1ad67a2 ada.strings.text_buffers%s
 D a-stuten.ads		20260501130736 c6ced0ae ada.strings.utf_encoding%s
 D a-tags.ads		20260501130736 2dbf449c ada.tags%s
 D a-unccon.ads		20260501130736 0e9b276f ada.unchecked_conversion%s
-D alert_queue.ads	20260623000310 2e2d9d83 alert_queue%s
-D alert_queue.adb	20260622235409 8525f048 alert_queue%b
-D f1_types.ads		20260622231500 e256a974 f1_types%s
+D alert_queue.ads	20260623201059 2e2d9d83 alert_queue%s
+D alert_queue.adb	20260623201059 8525f048 alert_queue%b
+D f1_types.ads		20260623201059 e256a974 f1_types%s
 D interfac.ads		20260501130736 9111f9c1 interfaces%s
 D i-c.ads		20260501130736 dbdd3be7 interfaces.c%s
 D system.ads		20260501130736 e2b7c99d system%s
@@ -75,46 +73,46 @@ D s-tpobop.ads		20260501130736 5f548bb3 system.tasking.protected_objects.operati
 D s-traent.ads		20260501130736 c81cbf8c system.traceback_entries%s
 D s-unstyp.ads		20260501130736 fa2a7f59 system.unsigned_types%s
 G a e
-G c Z s b [enqueue alert_queue__queue 18 17 none]
-G c Z s b [dequeue alert_queue__queue 20 13 none]
-G c Z s b [is_empty alert_queue__queue 22 16 none]
-G c Z s b [queue__enqueueN alert_queue 18 7 none]
-G c Z s b [queue__enqueueP alert_queue 18 7 none]
-G c Z s b [queue__is_emptyN alert_queue 22 7 none]
-G c Z s b [queue__is_emptyP alert_queue 22 7 none]
-G c Z s s [alert_entryIP alert_queue 8 9 none]
-G c Z s s [Talert_arrayBIP alert_queue 14 4 none]
-G c Z s s [queueTVDI alert_queue 17 4 none]
-G c Z s s [queueTVDF alert_queue 17 4 none]
-G c Z s s [queueTVIP alert_queue 17 4 none]
-G c Z s s [P5sIP alert_queue 20 7 none]
+G c Z s b [enqueue alert_queue__queue 15 17 none]
+G c Z s b [dequeue alert_queue__queue 17 13 none]
+G c Z s b [is_empty alert_queue__queue 19 16 none]
+G c Z s b [queue__enqueueN alert_queue 15 7 none]
+G c Z s b [queue__enqueueP alert_queue 15 7 none]
+G c Z s b [queue__is_emptyN alert_queue 19 7 none]
+G c Z s b [queue__is_emptyP alert_queue 19 7 none]
+G c Z s s [alert_entryIP alert_queue 7 9 none]
+G c Z s s [Talert_arrayBIP alert_queue 12 4 none]
+G c Z s s [queueTVDI alert_queue 14 4 none]
+G c Z s s [queueTVDF alert_queue 14 4 none]
+G c Z s s [queueTVIP alert_queue 14 4 none]
+G c Z s s [P5sIP alert_queue 17 7 none]
 X 11 alert_queue.ads
-3K9*Alert_Queue 30l5 30e16 12|1b14 30l5 30t16
-6i4*Max_Size{natural} 14r36 12|6r21 8r36 20r34
-8R9*Alert_Entry 11e14 14r53
-9e7*Level{13|23E9} 12|18r33
-10a7*Msg{13|34A12} 12|19r33
-14A9*Alert_Array(8R9)<integer> 27r20
-17w14*Queue 12|2b19 29l8 29t13
-18U17 Enqueue 18>26 18>59 12|4b17 11l11 11t18
-18e26 Level{13|23E9} 12|4b26 7r31
-18a59 Msg{13|34A12} 12|4b59 7r38
-20Y13 Dequeue 20<22 20<56 12|15b13 22l11 22t18
-20e22 Level{13|23E9} 12|18m10
-20a56 Msg{13|34A12} 12|19m10
-22V16 Is_Empty{boolean} 12|24b16 27l11 27t19
-25i7 Head{natural} 12|18r27 19r27 20r10 20r20
-25i13 Tail{natural} 12|7r21 8r13 8r22
-26i7 Count{natural} 12|6r13 9r13 9r22 16r15 21r10 21r19 26r17
-27a7 Buffer{14A9} 12|7r13 18r19 19r19
+3K9*Alert_Queue 27l5 27e16 12|1b14 30l5 30t16
+5i4*Max_Size{natural} 12r36 12|6r21 8r36 20r34
+7R9*Alert_Entry 10e14 12r53
+8e7*Level{13|23E9} 12|18r33
+9a7*Msg{13|34A12} 12|19r33
+12A9*Alert_Array(7R9)<integer> 24r20
+14w14*Queue 12|2b19 29l8 29t13
+15U17 Enqueue 15>26 15>59 12|4b17 11l11 11t18
+15e26 Level{13|23E9} 12|4b26 7r31
+15a59 Msg{13|34A12} 12|4b59 7r38
+17Y13 Dequeue 17<22 17<56 12|15b13 22l11 22t18
+17e22 Level{13|23E9} 12|18m10
+17a56 Msg{13|34A12} 12|19m10
+19V16 Is_Empty{boolean} 12|24b16 27l11 27t19
+22i7 Head{natural} 12|18r27 19r27 20r10 20r20
+22i13 Tail{natural} 12|7r21 8r13 8r22
+23i7 Count{natural} 12|6r13 9r13 9r22 16r15 21r10 21r19 26r17
+24a7 Buffer{12A9} 12|7r13 18r19 19r19
 X 12 alert_queue.adb
 15e22 Level{13|23E9}
 15a56 Msg{13|34A12}
 X 13 f1_types.ads
-3K9*F1_Types 11|1w6 9r15 10r15 18r37 18r68 20r34 20r66 12|4r37 4r68 15r34
+3K9*F1_Types 11|1w6 8r15 9r15 15r37 15r68 17r34 17r66 12|4r37 4r68 15r34
 . 15r66 13|42e13
-23E9*Alert_Level 11|9r24 18r46 20r43 12|4r46 15r43 13|23e61
-34A12*Alert_String{string}<integer> 11|10r24 18r77 20r75 12|4r77 15r75
+23E9*Alert_Level 11|8r24 15r46 17r43 12|4r46 15r43 13|23e61
+34A12*Alert_String{string}<integer> 11|9r24 15r77 17r75 12|4r77 15r75
 X 32 s-stausa.ads
 206U14*Initialize 207i<c,__gnat_stack_usage_initialize>22
 265U14*Output_Results 269i<c,__gnat_stack_usage_output_results>22

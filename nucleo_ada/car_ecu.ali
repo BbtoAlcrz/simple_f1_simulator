@@ -5,7 +5,7 @@ RN
 RV NO_IO
 RV NO_DYNAMIC_SIZED_OBJECTS
 
-U car_ecu%b		car_ecu.adb		d6e684b1 NE OO PK
+U car_ecu%b		car_ecu.adb		0f376813 NE OO PK
 W ada%s			ada.ads			ada.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
@@ -24,8 +24,8 @@ D a-stuten.ads		20260501130736 c6ced0ae ada.strings.utf_encoding%s
 D a-tags.ads		20260501130736 2dbf449c ada.tags%s
 D a-textio.ads		20260501130736 34ef47de ada.text_io%s
 D a-unccon.ads		20260501130736 0e9b276f ada.unchecked_conversion%s
-D car_ecu.ads		20260622233150 71eec82f car_ecu%s
-D car_ecu.adb		20260622233307 93e70b40 car_ecu%b
+D car_ecu.ads		20260623201059 71eec82f car_ecu%s
+D car_ecu.adb		20260623201059 4a36e7e2 car_ecu%b
 D interfac.ads		20260501130736 9111f9c1 interfaces%s
 D i-cstrea.ads		20260501130736 ffd01b9d interfaces.c_streams%s
 D system.ads		20260501130736 e2b7c99d system%s
@@ -58,7 +58,7 @@ X 9 a-textio.ads
 X 11 car_ecu.ads
 1K9*Car_ECU 8l5 8e12 12|3b14 22l5 22t12
 4U14*Set_Power_Limit 4>31 12|5b14 9l8 9t23
-4i31 Limit{integer} 12|5b31 8r105
+4i31 Limit{integer} 12|5b31 8r101
 5U14*Disengage_MGU 12|11b14 14l8 14t21
 6U14*Emergency_Stop 12|16b14 20l8 20t22
 

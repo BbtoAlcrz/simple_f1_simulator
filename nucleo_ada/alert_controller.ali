@@ -51,15 +51,15 @@ D a-sttebu.ads		20260501130736 f1ad67a2 ada.strings.text_buffers%s
 D a-stuten.ads		20260501130736 c6ced0ae ada.strings.utf_encoding%s
 D a-tags.ads		20260501130736 2dbf449c ada.tags%s
 D a-unccon.ads		20260501130736 0e9b276f ada.unchecked_conversion%s
-D alert_controller.ads	20260623012002 90bcc09a alert_controller%s
-D alert_controller.adb	20260623150514 34963040 alert_controller%b
-D alert_queue.ads	20260623000310 2e2d9d83 alert_queue%s
-D f1_types.ads		20260622231500 e256a974 f1_types%s
+D alert_controller.ads	20260623201059 90bcc09a alert_controller%s
+D alert_controller.adb	20260623201059 34963040 alert_controller%b
+D alert_queue.ads	20260623201059 2e2d9d83 alert_queue%s
+D f1_types.ads		20260623201059 e256a974 f1_types%s
 D interfac.ads		20260501130736 9111f9c1 interfaces%s
 D i-c.ads		20260501130736 dbdd3be7 interfaces.c%s
-D metrics_db.ads	20260623144947 94af6757 metrics_db%s
-D safety_monitor.ads	20260623011704 8059b2d0 safety_monitor%s
-D sensor_manager.ads	20260623010208 8dfbd9d4 sensor_manager%s
+D metrics_db.ads	20260623201059 94af6757 metrics_db%s
+D safety_monitor.ads	20260623201059 8059b2d0 safety_monitor%s
+D sensor_manager.ads	20260623201059 8dfbd9d4 sensor_manager%s
 D system.ads		20260501130736 e2b7c99d system%s
 D s-atacco.ads		20260501130736 5868e3ba system.address_to_access_conversions%s
 D s-c_time.ads		20260501130736 e502d0c0 system.c_time%s
@@ -88,7 +88,7 @@ D s-tpoben.ads		20260501130736 60ad3dae system.tasking.protected_objects.entries
 D s-tassta.ads		20260501130736 cca55c94 system.tasking.stages%s
 D s-traent.ads		20260501130736 c81cbf8c system.traceback_entries%s
 D s-unstyp.ads		20260501130736 fa2a7f59 system.unsigned_types%s
-D threshold_db.ads	20260622234703 af2589b8 threshold_db%s
+D threshold_db.ads	20260623201059 af2589b8 threshold_db%s
 G a e
 G c b b b [b alert_controller 9 1 none]
 G c Z s b [alert_task alert_controller 6 14 none]
@@ -96,14 +96,14 @@ G c Z s s [alert_taskVIP alert_controller 6 4 none]
 G r s TtelemetryarrayB [b alert_controller 9 1 none] [TtelemetryarrayBIP f1_types 20 4 none]
 G r c none [b alert_controller 9 1 none] [read_all_sensors sensor_manager 15 13 none]
 G r c none [b alert_controller 9 1 none] [get_limit threshold_db 6 13 none]
-G r p none [b alert_controller 9 1 none] [enqueue alert_queue__queue 18 17 none]
+G r p none [b alert_controller 9 1 none] [enqueue alert_queue__queue 15 17 none]
 G r p none [b alert_controller 9 1 none] [alert_signal safety_monitor__failsafe_handler 10 17 none]
 G r p none [b alert_controller 9 1 none] [set_status metrics_db__stats 8 17 none]
 G r p none [b alert_controller 9 1 none] [register_times metrics_db__stats 7 17 none]
 G r s TtelemetryarrayB [alert_task alert_controller 6 14 none] [TtelemetryarrayBIP f1_types 20 4 none]
 G r c none [alert_task alert_controller 6 14 none] [read_all_sensors sensor_manager 15 13 none]
 G r c none [alert_task alert_controller 6 14 none] [get_limit threshold_db 6 13 none]
-G r p none [alert_task alert_controller 6 14 none] [enqueue alert_queue__queue 18 17 none]
+G r p none [alert_task alert_controller 6 14 none] [enqueue alert_queue__queue 15 17 none]
 G r p none [alert_task alert_controller 6 14 none] [alert_signal safety_monitor__failsafe_handler 10 17 none]
 G r p none [alert_task alert_controller 6 14 none] [set_status metrics_db__stats 8 17 none]
 G r p none [alert_task alert_controller 6 14 none] [register_times metrics_db__stats 7 17 none]
@@ -130,9 +130,9 @@ X 15 alert_controller.adb
 19b7 Falla_Detectada{boolean} 31m10 40m19 48r13
 33e14 S{17|6E9} 34r21 35r53 37r24 38r32
 X 16 alert_queue.ads
-3K9*Alert_Queue 15|5w6 42r19 16|30e16
-17w14*Queue 15|42r31
-18U17 Enqueue 15|42s37
+3K9*Alert_Queue 15|5w6 42r19 16|27e16
+14w14*Queue 15|42r31
+15U17 Enqueue 15|42s37
 X 17 f1_types.ads
 3K9*F1_Types 14|1w6 15|1w6 1r20 13r25 14r25 27r47 33r19 57r18 59r42 60r42
 . 17|42e13
