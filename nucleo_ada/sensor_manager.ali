@@ -1,0 +1,254 @@
+V "GNAT Lib v16"
+P SS ZX
+
+RN
+RV NO_DELAY
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_NESTED_FINALIZATION
+RV NO_PROTECTED_TYPES
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASKING
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_ELABORATION_CODE
+RV NO_OBSOLESCENT_FEATURES
+RV MAX_TASKS=1
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U sensor_manager%b	sensor_manager.adb	f4fd8e54 OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+Z ada.real_time.delays%s  a-retide.adb		a-retide.ali
+W ada.streams%s		a-stream.adb		a-stream.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.fixed%s	a-strfix.adb		a-strfix.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W f1_types%s		f1_types.ads		f1_types.ali
+W gnat%s		gnat.ads		gnat.ali
+W gnat.sockets%s	g-socket.adb		g-socket.ali
+Z system%s		system.ads		system.ali
+Z system.finalization_primitives%s  s-finpri.adb  s-finpri.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+Z system.val_flt%s	s-valflt.ads		s-valflt.ali
+
+U sensor_manager%s	sensor_manager.ads	8d1ab93d EE OO PK
+Z ada.real_time%s	a-reatim.adb		a-reatim.ali
+W f1_types%s		f1_types.ads		f1_types.ali
+W system%s		system.ads		system.ali
+Z system.parameters%s	s-parame.adb		s-parame.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.task_info%s	s-tasinf.adb		s-tasinf.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+D ada.ads		20260501130736 76789da1 ada%s
+D a-charac.ads		20260501130736 2d3ec45b ada.characters%s
+D a-chlat1.ads		20260501130736 e0d72e76 ada.characters.latin_1%s
+D a-except.ads		20260501130736 8699d7ff ada.exceptions%s
+D a-finali.ads		20260501130736 099c16e4 ada.finalization%s
+D a-ioexce.ads		20260501130736 40018c65 ada.io_exceptions%s
+D a-reatim.ads		20260501130736 d11673fd ada.real_time%s
+D a-retide.ads		20260501130736 081cdaa4 ada.real_time.delays%s
+D a-stream.ads		20260501130736 cb01a8f8 ada.streams%s
+D a-string.ads		20260501130736 90ac6797 ada.strings%s
+D a-strfix.ads		20260501130736 8648dedb ada.strings.fixed%s
+D a-strmap.ads		20260501130736 f7e6ca10 ada.strings.maps%s
+D a-strsea.ads		20260501130736 18c3c634 ada.strings.search%s
+D a-sttebu.ads		20260501130736 f1ad67a2 ada.strings.text_buffers%s
+D a-strunb.ads		20260501130736 8d6ccba7 ada.strings.unbounded%s
+D a-stuten.ads		20260501130736 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20260501130736 2dbf449c ada.tags%s
+D a-textio.ads		20260501130736 34ef47de ada.text_io%s
+D a-unccon.ads		20260501130736 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20260501130736 c3a8ac65 ada.unchecked_deallocation%s
+D f1_types.ads		20260622231500 e256a974 f1_types%s
+D gnat.ads		20260501130736 b5988c27 gnat%s
+D g-socket.ads		20260501130736 a4cab028 gnat.sockets%s
+D interfac.ads		20260501130736 9111f9c1 interfaces%s
+D i-c.ads		20260501130736 dbdd3be7 interfaces.c%s
+D i-cstrea.ads		20260501130736 ffd01b9d interfaces.c_streams%s
+D sensor_manager.ads	20260623010208 8dfbd9d4 sensor_manager%s
+D sensor_manager.adb	20260623161406 972a0cdc sensor_manager%b
+D system.ads		20260501130736 e2b7c99d system%s
+D s-atacco.ads		20260501130736 5868e3ba system.address_to_access_conversions%s
+D s-atocou.ads		20260501130736 dc18efc3 system.atomic_counters%s
+D s-c_time.ads		20260501130736 e502d0c0 system.c_time%s
+D s-crtl.ads		20260501130736 823b6536 system.crtl%s
+D s-exctab.ads		20260501130736 91bef6ef system.exception_table%s
+D s-ficobl.ads		20260501130736 dc5161d4 system.file_control_block%s
+D s-finpri.ads		20260501130736 5970d55a system.finalization_primitives%s
+D s-finroo.ads		20260501130736 0a7c3ed4 system.finalization_root%s
+D s-linux.ads		20260501130736 96312dab system.linux%s
+D s-memory.ads		20260501130736 18949c1a system.memory%s
+D s-multip.ads		20260501130736 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20260501130736 8f610562 system.os_constants%s
+D s-osinte.ads		20260501130736 bfc41750 system.os_interface%s
+D s-oslock.ads		20260501130736 13fa6b78 system.os_locks%s
+D s-parame.ads		20260501130736 a1aeab5c system.parameters%s
+D s-pooglo.ads		20260501130736 91708d21 system.pool_global%s
+D s-powflt.ads		20260501130736 a51ab9b8 system.powten_flt%s
+D s-putima.ads		20260501130736 1b989439 system.put_images%s
+D s-retsta.ads		20260501130736 0f6b06cb system.return_stack%s
+D s-secsta.ads		20260501130736 578279f5 system.secondary_stack%s
+D s-soflin.ads		20260501130736 5d88fdea system.soft_links%s
+D s-stache.ads		20260501130736 0b81c1fe system.stack_checking%s
+D s-stausa.ads		20260501130736 f470ae2d system.stack_usage%s
+D s-stalib.ads		20260501130736 1c9580f6 system.standard_library%s
+D s-stalib.adb		20260501130736 eb464a47 system.standard_library%b
+D s-stoele.ads		20260501130736 ccded4e8 system.storage_elements%s
+D s-stopoo.ads		20260501130736 45459446 system.storage_pools%s
+D s-stratt.ads		20260501130736 80b8dafb system.stream_attributes%s
+D s-tasinf.ads		20260501130736 528dde74 system.task_info%s
+D s-taspri.ads		20260501130736 4fd5ef41 system.task_primitives%s
+D s-taprop.ads		20260501130736 6a572f54 system.task_primitives.operations%s
+D s-taskin.ads		20260501130736 e3b5765b system.tasking%s
+D s-taprob.ads		20260501130736 acd6094d system.tasking.protected_objects%s
+D s-tassta.ads		20260501130736 cca55c94 system.tasking.stages%s
+D s-traent.ads		20260501130736 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20260501130736 fa2a7f59 system.unsigned_types%s
+D s-valflt.ads		20260501130736 78fc9326 system.val_flt%s
+D s-valrea.ads		20260501130736 f0598c00 system.val_real%s
+D s-wchcon.ads		20260501130736 d9032363 system.wch_con%s
+G a e
+G c b b b [b sensor_manager 8 1 none]
+G c Z s b [sensor_task sensor_manager 7 14 none]
+G c Z s s [sensor_taskVIP sensor_manager 7 4 none]
+G c Z s b [read_all_sensors sensor_manager 15 13 none]
+G c Z b b [write sensor_manager__data_lock 13 17 none]
+G c Z b b [read sensor_manager__data_lock 14 16 none]
+G c Z b b [data_lock__writeN sensor_manager 13 7 none]
+G c Z b b [data_lock__writeP sensor_manager 13 7 none]
+G c Z b b [data_lock__readN sensor_manager 14 7 none]
+G c Z b b [data_lock__readP sensor_manager 14 7 none]
+G c Z b b [data_lockTVIP sensor_manager 12 4 none]
+G r s TtelemetryarrayB [b sensor_manager 8 1 none] [TtelemetryarrayBIP f1_types 20 4 none]
+G r s TtelemetryarrayB [sensor_task sensor_manager 7 14 none] [TtelemetryarrayBIP f1_types 20 4 none]
+G r s TtelemetryarrayB [data_lockTVIP sensor_manager 12 4 none] [TtelemetryarrayBIP f1_types 20 4 none]
+X 1 ada.ads
+18K9*Ada 22e8 28|1r6 2r6 2r25 3r6 3r25 5r6 5r29 67r7
+X 7 a-reatim.ads
+46K13*Real_Time 193e18 28|2w10 2r29
+57O9*Time<duration> 28|32r25
+62O9*Time_Span<duration>
+69V13*Clock{57O9} 28|32s33 73s35 104s38
+73V14*"+"{57O9} 28|77s45
+X 9 a-stream.ads
+36K13*Streams 90e16 28|3w10 3r29
+42M9*Stream_Element
+44I9*Stream_Element_Offset<long_long_integer> 28|39r18 85r52
+54A9*Stream_Element_Array(42M9)<44I9> 28|38r18
+X 10 a-string.ads
+16K13*Strings 35e16 28|5r10 5r33
+X 11 a-strfix.ads
+49K21*Fixed 1390e22 28|5w18 5r41
+252V13*Index{natural} 28|44s27 49s24 50s44
+X 18 a-textio.ads
+58K13*Text_IO 785e16 28|1w10 67r11
+565U14*Put_Line 28|67s19
+X 21 f1_types.ads
+3K9*F1_Types 42e13 27|1w6 15r37 28|6w6 6r25 10r19 13r34 14r28 16r16 20r34
+. 25r28 33r25 69r16 72r40 77r47 89r47 90r47 91r47 92r47 93r47 94r47 95r47
+. 96r50 97r47 103r19 112r37
+6E9*Sensor_Id 8e53 28|69r25 103r28
+7n7*ENGINE_TEMP{6E9} 28|89r25
+7n20*TYRE_FL{6E9} 28|92r25
+7n29*TYRE_FR{6E9} 28|93r25
+7n38*TYRE_RL{6E9} 28|94r25
+7n47*TYRE_RR{6E9} 28|95r25
+8n7*BRAKE_PRESSURE{6E9} 28|96r25
+8n23*FUEL_FLOW{6E9} 28|91r25
+8n34*G_FORCE{6E9} 28|72r49 97r25
+8n43*GPS_SPEED{6E9} 28|90r25
+10F9*Sensor_Value<float> 28|89r56 90r56 91r56 92r56 93r56 94r56 95r56 96r59
+. 97r56
+14o7*Timestamp{7|57O9} 28|73m22 104m25
+15e7*Sensor{6E9} 28|70m22
+16f7*Value{10F9} 28|72m22 89m38 90m36 91m36 92m34 93m34 94m34 95m34 96m41
+. 97m34
+17b7*Valid{boolean} 28|71m22
+20A9*TelemetryArray(13R9)<6E9> 27|15r46 28|10r28 13r43 14r37 16r25 20r43
+. 25r37 33r34 112r46
+37o4*SENSOR_DEADLINE{7|62O9} 28|77r56
+X 22 gnat.ads
+40K9*GNAT 63e9 28|4r6 4r25
+X 23 g-socket.ads
+56K14*Sockets 1605e17 28|4w11 4r30
+380U14*Initialize 28|59s7
+413I9*Socket_Type<integer> 28|35r18
+457X4*Socket_Error 28|100r18
+473n25*Family_Inet{473E9} 28|60r28
+481n38*Socket_Datagram{481E9} 28|60r41
+496I9*Port_Type<integer>
+594R9*Sock_Addr_Type 604e14 28|36r18 40r18
+599r13*Addr{521R9} 28|61m15
+600i13*Port{496I9} 28|62m15
+660V13*Addresses{521R9} 28|61s23
+677V13*Get_Host_By_Name{643R9} 28|61s34
+1003n7*Non_Blocking_IO{1002E9} 28|64r23
+1006R9*Request_Type 1015e14 28|41r18
+1006e23*Name{1002E9} 28|64m15
+1009b13*Enabled{boolean} 28|64m40
+1125U14*Create_Socket 28|60s7
+1167U14*Bind_Socket 28|63s7
+1197U14*Control_Socket 28|65s7
+1243U14*Receive_Socket 28|80s13
+X 27 sensor_manager.ads
+4K9*Sensor_Manager 17l5 17e19 28|8b14 117l5 117t19
+7T14*Sensor_Task 9l8 9e19 12r20 28|31b14 110l8 110t19
+12t4*Sensor_Worker{7T14}
+15V13*Read_All_Sensors{21|20A9} 28|112b13 115l8 115t24
+X 28 sensor_manager.adb
+10a4 Current_Data{21|20A9}
+12w14 Data_Lock 19b19 29l8 29t17 107r10 114r14
+13U17 Write 13>24 20b17 23l11 23t16 107s20
+13a24 Data{21|20A9} 20b24 22r20
+14V16 Read{21|20A9} 25b16 28l11 28t15 114s24
+16a7 Stored{21|20A9} 22r10 27r17
+32o7 Next_Activation{7|57O9} 77m10 77r29 108r22
+33a7 Snapshot{21|20A9} 70m10 71m10 72m10 73m10 89m16 90m16 91m16 92m16 93m16
+. 94m16 95m16 96m16 97m16 104m13 107r27
+35i7 Sock{23|413I9} 60m22 63r20 65r23 80r29
+36r7 Address{23|594R9} 61m7 62m7 63r26
+38a7 Data_Arr{9|54A9} 80m35 85r43
+39i7 Last{9|44I9} 80m45 82r43 84r38
+40r7 From{23|594R9} 80m51
+41r7 Req{23|1006R9} 64m7 65m29 65r29
+43V16 Extraer_Valor{float} 43b16 43>31 43>46 56l11 56t24 89s69 90s69 91s69
+. 92s69 93s69 94s69 95s69 96s72 97s69
+43a31 JSON{string} 44r34 49r31 49r50 50r51 50r70 51r33
+43a46 Clave{string} 44r40 48r32
+44i10 Idx{natural} 47r13 48r26
+45i10 Start_Pos{natural} 48m13 49r37 50r57 51r39
+45i21 End_Pos{natural} 49m13 50r16 50m33 51r52
+69e11 S{21|6E9} 70r19 70r32 71r19 72r19 72r36 73r19
+82a16 Msg{string} 85m19 89r83 90r83 91r83 92r83 93r83 94r83 95r83 96r86 97r83
+84i20 I{integer} 85r23 85r74
+103e14 S{21|6E9} 104r22
+X 29 system.ads
+37K9*System 27|2w6 8r24 29|155e11
+67M9*Address
+108I12*Any_Priority{integer}
+109I12*Priority{108I12} 27|8r31
+X 39 s-memory.ads
+51V13*Alloc{29|67M9} 101i<c,__gnat_malloc>22
+66U14*Free 102i<c,__gnat_free>22
+74V13*Realloc{29|67M9} 103i<c,__gnat_realloc>22
+X 52 s-stausa.ads
+206U14*Initialize 207i<c,__gnat_stack_usage_initialize>22
+265U14*Output_Results 269i<c,__gnat_stack_usage_output_results>22
+X 54 s-stalib.adb
+87U14 Break_Start 88i<c,__gnat_break_start>22
+

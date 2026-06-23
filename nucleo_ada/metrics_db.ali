@@ -1,0 +1,104 @@
+V "GNAT Lib v16"
+P ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_PROTECTED_TYPES
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_ELABORATION_CODE
+
+U metrics_db%b		metrics_db.adb		dd66f8db NE OO PK
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+
+U metrics_db%s		metrics_db.ads		a7efbdde EE OO PF PK
+W ada%s			ada.ads			ada.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W f1_types%s		f1_types.ads		f1_types.ali
+Z system%s		system.ads		system.ali
+Z system.finalization_primitives%s  s-finpri.adb  s-finpri.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+
+D ada.ads		20260501130736 76789da1 ada%s
+D a-except.ads		20260501130736 8699d7ff ada.exceptions%s
+D a-reatim.ads		20260501130736 d11673fd ada.real_time%s
+D a-unccon.ads		20260501130736 0e9b276f ada.unchecked_conversion%s
+D f1_types.ads		20260622231500 e256a974 f1_types%s
+D interfac.ads		20260501130736 9111f9c1 interfaces%s
+D i-c.ads		20260501130736 dbdd3be7 interfaces.c%s
+D metrics_db.ads	20260623144947 94af6757 metrics_db%s
+D metrics_db.adb	20260623145017 49c99f8c metrics_db%b
+D system.ads		20260501130736 e2b7c99d system%s
+D s-atacco.ads		20260501130736 5868e3ba system.address_to_access_conversions%s
+D s-c_time.ads		20260501130736 e502d0c0 system.c_time%s
+D s-exctab.ads		20260501130736 91bef6ef system.exception_table%s
+D s-finpri.ads		20260501130736 5970d55a system.finalization_primitives%s
+D s-linux.ads		20260501130736 96312dab system.linux%s
+D s-multip.ads		20260501130736 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20260501130736 8f610562 system.os_constants%s
+D s-osinte.ads		20260501130736 bfc41750 system.os_interface%s
+D s-oslock.ads		20260501130736 13fa6b78 system.os_locks%s
+D s-parame.ads		20260501130736 a1aeab5c system.parameters%s
+D s-secsta.ads		20260501130736 578279f5 system.secondary_stack%s
+D s-soflin.ads		20260501130736 5d88fdea system.soft_links%s
+D s-stache.ads		20260501130736 0b81c1fe system.stack_checking%s
+D s-stausa.ads		20260501130736 f470ae2d system.stack_usage%s
+D s-stalib.ads		20260501130736 1c9580f6 system.standard_library%s
+D s-stoele.ads		20260501130736 ccded4e8 system.storage_elements%s
+D s-tasinf.ads		20260501130736 528dde74 system.task_info%s
+D s-taspri.ads		20260501130736 4fd5ef41 system.task_primitives%s
+D s-taprop.ads		20260501130736 6a572f54 system.task_primitives.operations%s
+D s-taskin.ads		20260501130736 e3b5765b system.tasking%s
+D s-taprob.ads		20260501130736 acd6094d system.tasking.protected_objects%s
+D s-traent.ads		20260501130736 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20260501130736 fa2a7f59 system.unsigned_types%s
+G a e
+G c Z s b [register_times metrics_db__stats 7 17 none]
+G c Z s b [set_status metrics_db__stats 8 17 none]
+G c Z s b [get_tep_us metrics_db__stats 10 16 none]
+G c Z s b [get_trp_us metrics_db__stats 11 16 none]
+G c Z s b [get_status metrics_db__stats 12 16 none]
+G c Z s b [stats__register_timesN metrics_db 7 7 none]
+G c Z s b [stats__register_timesP metrics_db 7 7 none]
+G c Z s b [stats__set_statusN metrics_db 8 7 none]
+G c Z s b [stats__set_statusP metrics_db 8 7 none]
+G c Z s b [stats__get_tep_usN metrics_db 10 7 none]
+G c Z s b [stats__get_tep_usP metrics_db 10 7 none]
+G c Z s b [stats__get_trp_usN metrics_db 11 7 none]
+G c Z s b [stats__get_trp_usP metrics_db 11 7 none]
+G c Z s b [stats__get_statusN metrics_db 12 7 none]
+G c Z s b [stats__get_statusP metrics_db 12 7 none]
+G c Z s s [statsTVIP metrics_db 5 4 none]
+X 1 ada.ads
+18K9*Ada 22e8 8|2r6 2r25
+X 3 a-reatim.ads
+46K13*Real_Time 193e18 8|2w10 2r29
+62O9*Time_Span<duration> 8|7r44 9|3r44
+101V14*"/"{integer} 9|6s34 7s34
+125V13*Microseconds{62O9} 9|6s36 7s36
+X 5 f1_types.ads
+3K9*F1_Types 42e13 8|1w6 8r41 12r34 16r26 16r50 9|10r41 25r34
+23E9*Alert_Level 23e61 8|8r50 12r43 16r35 9|10r50 25r43
+23n25*NORMAL{23E9} 8|16r59
+X 8 metrics_db.ads
+4K9*Metrics_DB 18l5 18e15 9|1b14 30l5 30t15
+5w14*Stats 9|2b19 29l8 29t13
+7U17 Register_Times 7>33 7>38 9|3b17 8l11 8t25
+7o33 TEP{3|62O9} 9|3b33 6r30
+7o38 TRP{3|62O9} 9|3b38 7r30
+8U17 Set_Status 8>29 9|10b17 13l11 13t21
+8e29 Status{5|23E9} 9|10b29 12r28
+10V16 Get_TEP_us{integer} 9|15b16 18l11 18t21
+11V16 Get_TRP_us{integer} 9|20b16 23l11 23t21
+12V16 Get_Status{5|23E9} 9|25b16 28l11 28t21
+14i7 TEP_Microseconds{integer} 9|6r10 17r17
+15i7 TRP_Microseconds{integer} 9|7r10 22r17
+16e7 Current_Status{5|23E9} 9|12r10 27r17
+X 24 s-stausa.ads
+206U14*Initialize 207i<c,__gnat_stack_usage_initialize>22
+265U14*Output_Results 269i<c,__gnat_stack_usage_output_results>22
+

@@ -1,0 +1,177 @@
+V "GNAT Lib v16"
+P ZX
+
+RN
+RV NO_DELAY
+RV NO_FIXED_POINT
+RV NO_FLOATING_POINT
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_RELATIVE_DELAY
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASKING
+RV NO_DEFAULT_INITIALIZATION
+RV NO_ELABORATION_CODE
+RV MAX_TASKS=1
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U alert_controller%b	alert_controller.adb	8f6f323b OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+Z ada.real_time.delays%s  a-retide.adb		a-retide.ali
+W alert_queue%s		alert_queue.adb		alert_queue.ali  AD
+W f1_types%s		f1_types.ads		f1_types.ali
+W metrics_db%s		metrics_db.adb		metrics_db.ali  AD
+W safety_monitor%s	safety_monitor.adb	safety_monitor.ali  AD
+W sensor_manager%s	sensor_manager.adb	sensor_manager.ali  AD
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+W threshold_db%s	threshold_db.adb	threshold_db.ali  AD
+
+U alert_controller%s	alert_controller.ads	905da073 EE OO PK
+Z ada.real_time%s	a-reatim.adb		a-reatim.ali
+W f1_types%s		f1_types.ads		f1_types.ali
+W system%s		system.ads		system.ali
+Z system.parameters%s	s-parame.adb		s-parame.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.task_info%s	s-tasinf.adb		s-tasinf.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+D ada.ads		20260501130736 76789da1 ada%s
+D a-calend.ads		20260501130736 bf7f3cc9 ada.calendar%s
+D a-caldel.ads		20260501130736 9f20b83d ada.calendar.delays%s
+D a-except.ads		20260501130736 8699d7ff ada.exceptions%s
+D a-finali.ads		20260501130736 099c16e4 ada.finalization%s
+D a-reatim.ads		20260501130736 d11673fd ada.real_time%s
+D a-retide.ads		20260501130736 081cdaa4 ada.real_time.delays%s
+D a-stream.ads		20260501130736 cb01a8f8 ada.streams%s
+D a-string.ads		20260501130736 90ac6797 ada.strings%s
+D a-sttebu.ads		20260501130736 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20260501130736 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20260501130736 2dbf449c ada.tags%s
+D a-unccon.ads		20260501130736 0e9b276f ada.unchecked_conversion%s
+D alert_controller.ads	20260623012002 90bcc09a alert_controller%s
+D alert_controller.adb	20260623150514 34963040 alert_controller%b
+D alert_queue.ads	20260623000310 2e2d9d83 alert_queue%s
+D f1_types.ads		20260622231500 e256a974 f1_types%s
+D interfac.ads		20260501130736 9111f9c1 interfaces%s
+D i-c.ads		20260501130736 dbdd3be7 interfaces.c%s
+D metrics_db.ads	20260623144947 94af6757 metrics_db%s
+D safety_monitor.ads	20260623011704 8059b2d0 safety_monitor%s
+D sensor_manager.ads	20260623010208 8dfbd9d4 sensor_manager%s
+D system.ads		20260501130736 e2b7c99d system%s
+D s-atacco.ads		20260501130736 5868e3ba system.address_to_access_conversions%s
+D s-c_time.ads		20260501130736 e502d0c0 system.c_time%s
+D s-exctab.ads		20260501130736 91bef6ef system.exception_table%s
+D s-finpri.ads		20260501130736 5970d55a system.finalization_primitives%s
+D s-finroo.ads		20260501130736 0a7c3ed4 system.finalization_root%s
+D s-linux.ads		20260501130736 96312dab system.linux%s
+D s-multip.ads		20260501130736 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20260501130736 8f610562 system.os_constants%s
+D s-osinte.ads		20260501130736 bfc41750 system.os_interface%s
+D s-oslock.ads		20260501130736 13fa6b78 system.os_locks%s
+D s-parame.ads		20260501130736 a1aeab5c system.parameters%s
+D s-putima.ads		20260501130736 1b989439 system.put_images%s
+D s-secsta.ads		20260501130736 578279f5 system.secondary_stack%s
+D s-soflin.ads		20260501130736 5d88fdea system.soft_links%s
+D s-stache.ads		20260501130736 0b81c1fe system.stack_checking%s
+D s-stausa.ads		20260501130736 f470ae2d system.stack_usage%s
+D s-stalib.ads		20260501130736 1c9580f6 system.standard_library%s
+D s-stoele.ads		20260501130736 ccded4e8 system.storage_elements%s
+D s-tasinf.ads		20260501130736 528dde74 system.task_info%s
+D s-taspri.ads		20260501130736 4fd5ef41 system.task_primitives%s
+D s-taprop.ads		20260501130736 6a572f54 system.task_primitives.operations%s
+D s-taskin.ads		20260501130736 e3b5765b system.tasking%s
+D s-taprob.ads		20260501130736 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20260501130736 60ad3dae system.tasking.protected_objects.entries%s
+D s-tassta.ads		20260501130736 cca55c94 system.tasking.stages%s
+D s-traent.ads		20260501130736 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20260501130736 fa2a7f59 system.unsigned_types%s
+D threshold_db.ads	20260622234703 af2589b8 threshold_db%s
+G a e
+G c b b b [b alert_controller 9 1 none]
+G c Z s b [alert_task alert_controller 6 14 none]
+G c Z s s [alert_taskVIP alert_controller 6 4 none]
+G r s TtelemetryarrayB [b alert_controller 9 1 none] [TtelemetryarrayBIP f1_types 20 4 none]
+G r c none [b alert_controller 9 1 none] [read_all_sensors sensor_manager 15 13 none]
+G r c none [b alert_controller 9 1 none] [get_limit threshold_db 6 13 none]
+G r p none [b alert_controller 9 1 none] [enqueue alert_queue__queue 18 17 none]
+G r p none [b alert_controller 9 1 none] [alert_signal safety_monitor__failsafe_handler 10 17 none]
+G r p none [b alert_controller 9 1 none] [set_status metrics_db__stats 8 17 none]
+G r p none [b alert_controller 9 1 none] [register_times metrics_db__stats 7 17 none]
+G r s TtelemetryarrayB [alert_task alert_controller 6 14 none] [TtelemetryarrayBIP f1_types 20 4 none]
+G r c none [alert_task alert_controller 6 14 none] [read_all_sensors sensor_manager 15 13 none]
+G r c none [alert_task alert_controller 6 14 none] [get_limit threshold_db 6 13 none]
+G r p none [alert_task alert_controller 6 14 none] [enqueue alert_queue__queue 18 17 none]
+G r p none [alert_task alert_controller 6 14 none] [alert_signal safety_monitor__failsafe_handler 10 17 none]
+G r p none [alert_task alert_controller 6 14 none] [set_status metrics_db__stats 8 17 none]
+G r p none [alert_task alert_controller 6 14 none] [register_times metrics_db__stats 7 17 none]
+X 1 ada.ads
+18K9*Ada 22e8 15|2r6 2r25
+X 6 a-reatim.ads
+46K13*Real_Time 193e18 15|2w10 2r29
+57O9*Time<duration> 15|12r25 17r25 18r25
+62O9*Time_Span<duration>
+69V13*Clock{57O9} 15|24s26 29s25 54s25
+73V14*"+"{57O9} 15|27s45
+79V14*"-"{62O9} 15|59s35 60s35
+X 14 alert_controller.ads
+4K9*Alert_Controller 12l5 12e21 15|9b14 67l5 67t21
+6T14*Alert_Task 8l8 8e18 10r13 15|11b14 65l8 65t18
+10t4*Worker{6T14}
+X 15 alert_controller.adb
+12o7 Next_Activation{6|57O9} 24m7 27m10 27r29 63r22
+13a7 Data{17|20A9} 30m10 34r16 37r19 38r27 57r13 59r37 60r37
+14r7 Threshold{17|26R9} 35m16 37r35 38r43
+15a7 Msg_Buffer{17|34A12} 41m19 42r56
+17o7 Wakeup_Time{6|57O9} 29m10 59r23
+18o7 Finish_Time{6|57O9} 54m10 60r23
+19b7 Falla_Detectada{boolean} 31m10 40m19 48r13
+33e14 S{17|6E9} 34r21 35r53 37r24 38r32
+X 16 alert_queue.ads
+3K9*Alert_Queue 15|5w6 42r19 16|30e16
+17w14*Queue 15|42r31
+18U17 Enqueue 15|42s37
+X 17 f1_types.ads
+3K9*F1_Types 14|1w6 15|1w6 1r20 13r25 14r25 27r47 33r19 57r18 59r42 60r42
+. 17|42e13
+6E9*Sensor_Id 15|33r28 17|8e53
+7n7*ENGINE_TEMP{6E9} 15|57r27 59r51 60r51
+10F9*Sensor_Value<float>
+14o7*Timestamp{6|57O9} 15|59r64 60r64
+16f7*Value{10F9} 15|37r27 38r35
+17b7*Valid{boolean} 15|34r24 57r40
+20A9*TelemetryArray(13R9)<6E9> 15|13r34
+23n25*NORMAL{23E9} 15|51r42
+23n42*CRITICAL{23E9} 15|42r46 43r56 49r42
+26R9*Threshold_Record 15|14r34 17|29e14
+27f7*Upper_Limit{10F9} 15|37r45
+28f7*Lower_Limit{10F9} 15|38r53
+34A12*Alert_String{string}<integer> 15|15r25
+38o4*ALERT_DEADLINE{6|62O9} 15|27r56
+X 20 metrics_db.ads
+4K9*Metrics_DB 15|7w6 49r13 51r13 58r13 20|18e15
+5w14*Stats 15|49r24 51r24 58r24
+7U17 Register_Times 15|58s30
+7o33 TEP{6|62O9} 15|59r16
+7o38 TRP{6|62O9} 15|60r16
+8U17 Set_Status 15|49s30 51s30
+X 21 safety_monitor.ads
+4K9*Safety_Monitor 15|6w6 43r19 21|26e19
+10U17 Alert_Signal 15|43s42
+17w4*Handler{7W19} 15|43r34
+X 22 sensor_manager.ads
+4K9*Sensor_Manager 15|3w6 30r18 22|17e19
+15V13*Read_All_Sensors{17|20A9} 15|30s33
+X 23 system.ads
+37K9*System 14|2w6 7r24 23|155e11
+108I12*Any_Priority{integer}
+109I12*Priority{108I12} 14|7r31
+X 39 s-stausa.ads
+206U14*Initialize 207i<c,__gnat_stack_usage_initialize>22
+265U14*Output_Results 269i<c,__gnat_stack_usage_output_results>22
+X 51 threshold_db.ads
+3K9*Threshold_DB 15|4w6 35r29 51|9e17
+6V13*Get_Limit{17|26R9} 15|35s42
+

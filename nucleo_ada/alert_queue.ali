@@ -1,0 +1,121 @@
+V "GNAT Lib v16"
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV SIMPLE_BARRIERS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_PROTECTED_TYPES
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_ELABORATION_CODE
+RV MAX_PROTECTED_ENTRIES=1
+
+U alert_queue%b		alert_queue.adb		ab086dcb NE OO PK
+Z system%s		system.ads		system.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.tasking.protected_objects.entries%s  s-tpoben.adb  s-tpoben.ali
+Z system.tasking.protected_objects.operations%s  s-tpobop.adb  s-tpobop.ali
+
+U alert_queue%s		alert_queue.ads		cc7b34f7 EE OO PF PK
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W f1_types%s		f1_types.ads		f1_types.ali
+Z system%s		system.ads		system.ali
+Z system.finalization_primitives%s  s-finpri.adb  s-finpri.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.tasking.protected_objects.entries%s  s-tpoben.adb  s-tpoben.ali
+
+D ada.ads		20260501130736 76789da1 ada%s
+D a-except.ads		20260501130736 8699d7ff ada.exceptions%s
+D a-finali.ads		20260501130736 099c16e4 ada.finalization%s
+D a-reatim.ads		20260501130736 d11673fd ada.real_time%s
+D a-stream.ads		20260501130736 cb01a8f8 ada.streams%s
+D a-string.ads		20260501130736 90ac6797 ada.strings%s
+D a-sttebu.ads		20260501130736 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20260501130736 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20260501130736 2dbf449c ada.tags%s
+D a-unccon.ads		20260501130736 0e9b276f ada.unchecked_conversion%s
+D alert_queue.ads	20260623000310 2e2d9d83 alert_queue%s
+D alert_queue.adb	20260622235409 8525f048 alert_queue%b
+D f1_types.ads		20260622231500 e256a974 f1_types%s
+D interfac.ads		20260501130736 9111f9c1 interfaces%s
+D i-c.ads		20260501130736 dbdd3be7 interfaces.c%s
+D system.ads		20260501130736 e2b7c99d system%s
+D s-atacco.ads		20260501130736 5868e3ba system.address_to_access_conversions%s
+D s-c_time.ads		20260501130736 e502d0c0 system.c_time%s
+D s-exctab.ads		20260501130736 91bef6ef system.exception_table%s
+D s-finpri.ads		20260501130736 5970d55a system.finalization_primitives%s
+D s-finroo.ads		20260501130736 0a7c3ed4 system.finalization_root%s
+D s-linux.ads		20260501130736 96312dab system.linux%s
+D s-multip.ads		20260501130736 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20260501130736 8f610562 system.os_constants%s
+D s-osinte.ads		20260501130736 bfc41750 system.os_interface%s
+D s-oslock.ads		20260501130736 13fa6b78 system.os_locks%s
+D s-parame.ads		20260501130736 a1aeab5c system.parameters%s
+D s-putima.ads		20260501130736 1b989439 system.put_images%s
+D s-secsta.ads		20260501130736 578279f5 system.secondary_stack%s
+D s-soflin.ads		20260501130736 5d88fdea system.soft_links%s
+D s-stache.ads		20260501130736 0b81c1fe system.stack_checking%s
+D s-stausa.ads		20260501130736 f470ae2d system.stack_usage%s
+D s-stalib.ads		20260501130736 1c9580f6 system.standard_library%s
+D s-stoele.ads		20260501130736 ccded4e8 system.storage_elements%s
+D s-tasinf.ads		20260501130736 528dde74 system.task_info%s
+D s-taspri.ads		20260501130736 4fd5ef41 system.task_primitives%s
+D s-taprop.ads		20260501130736 6a572f54 system.task_primitives.operations%s
+D s-taskin.ads		20260501130736 e3b5765b system.tasking%s
+D s-taprob.ads		20260501130736 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20260501130736 60ad3dae system.tasking.protected_objects.entries%s
+D s-tpobop.ads		20260501130736 5f548bb3 system.tasking.protected_objects.operations%s
+D s-traent.ads		20260501130736 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20260501130736 fa2a7f59 system.unsigned_types%s
+G a e
+G c Z s b [enqueue alert_queue__queue 18 17 none]
+G c Z s b [dequeue alert_queue__queue 20 13 none]
+G c Z s b [is_empty alert_queue__queue 22 16 none]
+G c Z s b [queue__enqueueN alert_queue 18 7 none]
+G c Z s b [queue__enqueueP alert_queue 18 7 none]
+G c Z s b [queue__is_emptyN alert_queue 22 7 none]
+G c Z s b [queue__is_emptyP alert_queue 22 7 none]
+G c Z s s [alert_entryIP alert_queue 8 9 none]
+G c Z s s [Talert_arrayBIP alert_queue 14 4 none]
+G c Z s s [queueTVDI alert_queue 17 4 none]
+G c Z s s [queueTVDF alert_queue 17 4 none]
+G c Z s s [queueTVIP alert_queue 17 4 none]
+G c Z s s [P5sIP alert_queue 20 7 none]
+X 11 alert_queue.ads
+3K9*Alert_Queue 30l5 30e16 12|1b14 30l5 30t16
+6i4*Max_Size{natural} 14r36 12|6r21 8r36 20r34
+8R9*Alert_Entry 11e14 14r53
+9e7*Level{13|23E9} 12|18r33
+10a7*Msg{13|34A12} 12|19r33
+14A9*Alert_Array(8R9)<integer> 27r20
+17w14*Queue 12|2b19 29l8 29t13
+18U17 Enqueue 18>26 18>59 12|4b17 11l11 11t18
+18e26 Level{13|23E9} 12|4b26 7r31
+18a59 Msg{13|34A12} 12|4b59 7r38
+20Y13 Dequeue 20<22 20<56 12|15b13 22l11 22t18
+20e22 Level{13|23E9} 12|18m10
+20a56 Msg{13|34A12} 12|19m10
+22V16 Is_Empty{boolean} 12|24b16 27l11 27t19
+25i7 Head{natural} 12|18r27 19r27 20r10 20r20
+25i13 Tail{natural} 12|7r21 8r13 8r22
+26i7 Count{natural} 12|6r13 9r13 9r22 16r15 21r10 21r19 26r17
+27a7 Buffer{14A9} 12|7r13 18r19 19r19
+X 12 alert_queue.adb
+15e22 Level{13|23E9}
+15a56 Msg{13|34A12}
+X 13 f1_types.ads
+3K9*F1_Types 11|1w6 9r15 10r15 18r37 18r68 20r34 20r66 12|4r37 4r68 15r34
+. 15r66 13|42e13
+23E9*Alert_Level 11|9r24 18r46 20r43 12|4r46 15r43 13|23e61
+34A12*Alert_String{string}<integer> 11|10r24 18r77 20r75 12|4r77 15r75
+X 32 s-stausa.ads
+206U14*Initialize 207i<c,__gnat_stack_usage_initialize>22
+265U14*Output_Results 269i<c,__gnat_stack_usage_output_results>22
+

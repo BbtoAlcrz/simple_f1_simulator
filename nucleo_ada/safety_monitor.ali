@@ -1,0 +1,148 @@
+V "GNAT Lib v16"
+P ZX
+
+RN
+RV NO_ENTRY_CALLS_IN_ELABORATION_CODE
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_PROTECTED_TYPES
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASKING
+RV NO_DEFAULT_INITIALIZATION
+RV NO_ELABORATION_CODE
+RV MAX_PROTECTED_ENTRIES=1
+RV MAX_TASKS=1
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U safety_monitor%b	safety_monitor.adb	af9559a2 OO PK
+W ada%s			ada.ads			ada.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W car_ecu%s		car_ecu.adb		car_ecu.ali  AD
+W f1_types%s		f1_types.ads		f1_types.ali
+Z system%s		system.ads		system.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.tasking.protected_objects.entries%s  s-tpoben.adb  s-tpoben.ali
+Z system.tasking.protected_objects.operations%s  s-tpobop.adb  s-tpobop.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+U safety_monitor%s	safety_monitor.ads	80b8d239 EE OO PF PK
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.real_time%s	a-reatim.adb		a-reatim.ali
+W f1_types%s		f1_types.ads		f1_types.ali
+W system%s		system.ads		system.ali
+Z system.finalization_primitives%s  s-finpri.adb  s-finpri.ali
+Z system.parameters%s	s-parame.adb		s-parame.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.task_info%s	s-tasinf.adb		s-tasinf.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.tasking.protected_objects.entries%s  s-tpoben.adb  s-tpoben.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+D ada.ads		20260501130736 76789da1 ada%s
+D a-except.ads		20260501130736 8699d7ff ada.exceptions%s
+D a-finali.ads		20260501130736 099c16e4 ada.finalization%s
+D a-reatim.ads		20260501130736 d11673fd ada.real_time%s
+D a-stream.ads		20260501130736 cb01a8f8 ada.streams%s
+D a-string.ads		20260501130736 90ac6797 ada.strings%s
+D a-sttebu.ads		20260501130736 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20260501130736 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20260501130736 2dbf449c ada.tags%s
+D a-unccon.ads		20260501130736 0e9b276f ada.unchecked_conversion%s
+D car_ecu.ads		20260622233150 71eec82f car_ecu%s
+D f1_types.ads		20260622231500 e256a974 f1_types%s
+D interfac.ads		20260501130736 9111f9c1 interfaces%s
+D i-c.ads		20260501130736 dbdd3be7 interfaces.c%s
+D safety_monitor.ads	20260623011704 8059b2d0 safety_monitor%s
+D safety_monitor.adb	20260623011744 6d62f9d4 safety_monitor%b
+D system.ads		20260501130736 e2b7c99d system%s
+D s-atacco.ads		20260501130736 5868e3ba system.address_to_access_conversions%s
+D s-c_time.ads		20260501130736 e502d0c0 system.c_time%s
+D s-exctab.ads		20260501130736 91bef6ef system.exception_table%s
+D s-finpri.ads		20260501130736 5970d55a system.finalization_primitives%s
+D s-finroo.ads		20260501130736 0a7c3ed4 system.finalization_root%s
+D s-linux.ads		20260501130736 96312dab system.linux%s
+D s-multip.ads		20260501130736 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20260501130736 8f610562 system.os_constants%s
+D s-osinte.ads		20260501130736 bfc41750 system.os_interface%s
+D s-oslock.ads		20260501130736 13fa6b78 system.os_locks%s
+D s-parame.ads		20260501130736 a1aeab5c system.parameters%s
+D s-putima.ads		20260501130736 1b989439 system.put_images%s
+D s-secsta.ads		20260501130736 578279f5 system.secondary_stack%s
+D s-soflin.ads		20260501130736 5d88fdea system.soft_links%s
+D s-stache.ads		20260501130736 0b81c1fe system.stack_checking%s
+D s-stausa.ads		20260501130736 f470ae2d system.stack_usage%s
+D s-stalib.ads		20260501130736 1c9580f6 system.standard_library%s
+D s-stoele.ads		20260501130736 ccded4e8 system.storage_elements%s
+D s-tasinf.ads		20260501130736 528dde74 system.task_info%s
+D s-taspri.ads		20260501130736 4fd5ef41 system.task_primitives%s
+D s-taprop.ads		20260501130736 6a572f54 system.task_primitives.operations%s
+D s-taskin.ads		20260501130736 e3b5765b system.tasking%s
+D s-taprob.ads		20260501130736 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20260501130736 60ad3dae system.tasking.protected_objects.entries%s
+D s-tpobop.ads		20260501130736 5f548bb3 system.tasking.protected_objects.operations%s
+D s-tassta.ads		20260501130736 cca55c94 system.tasking.stages%s
+D s-traent.ads		20260501130736 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20260501130736 fa2a7f59 system.unsigned_types%s
+G a e
+G c b b b [b safety_monitor 5 1 none]
+G c Z s b [alert_signal safety_monitor__failsafe_handler 10 17 none]
+G c Z s b [wait_for_alert safety_monitor__failsafe_handler 11 13 none]
+G c Z s b [failsafe_handler__alert_signalN safety_monitor 10 7 none]
+G c Z s b [failsafe_handler__alert_signalP safety_monitor 10 7 none]
+G c Z s s [failsafe_handlerVDI safety_monitor 7 4 none]
+G c Z s s [failsafe_handlerVDF safety_monitor 7 4 none]
+G c Z s s [failsafe_handlerVIP safety_monitor 7 4 none]
+G c Z s s [P2sIP safety_monitor 11 7 none]
+G c Z s b [safety_task safety_monitor 20 14 none]
+G c Z s s [safety_taskVIP safety_monitor 20 4 none]
+G r c none [b safety_monitor 5 1 none] [set_power_limit car_ecu 4 14 none]
+G r c none [b safety_monitor 5 1 none] [disengage_mgu car_ecu 5 14 none]
+G r c none [b safety_monitor 5 1 none] [emergency_stop car_ecu 6 14 none]
+G r c none [safety_task safety_monitor 20 14 none] [set_power_limit car_ecu 4 14 none]
+G r c none [safety_task safety_monitor 20 14 none] [disengage_mgu car_ecu 5 14 none]
+G r c none [safety_task safety_monitor 20 14 none] [emergency_stop car_ecu 6 14 none]
+X 1 ada.ads
+18K9*Ada 22e8 16|3r6 3r25
+X 4 a-reatim.ads
+46K13*Real_Time 193e18 16|3w10 3r29
+X 11 car_ecu.ads
+1K9*Car_ECU 8e12 16|2w6 31r16 32r16 34r16
+4U14*Set_Power_Limit 16|31s24
+5U14*Disengage_MGU 16|32s24
+6U14*Emergency_Stop 16|34s24
+X 12 f1_types.ads
+3K9*F1_Types 42e13 15|1w6 10r42 11r41 14r19 14r43 16|1w6 1r20 8r42 14r41
+. 23r24
+23E9*Alert_Level 23e61 15|10r51 11r50 14r28 16|8r51 14r50 23r33
+23n25*NORMAL{23E9} 15|14r52
+23n42*CRITICAL{23E9} 16|30r18
+23n52*FAILSAFE{23E9} 16|33r18
+X 15 safety_monitor.ads
+4K9*Safety_Monitor 26l5 26e19 16|5b14 41l5 41t19
+7W19*Failsafe_Handler 13E7 15l8 15e24 17r14 16|7b19 20l8 20t24
+10U17 Alert_Signal 10>31 16|8b17 12l11 12t23
+10e31 Level{12|23E9} 16|8b31 10r23
+11Y13 Wait_For_Alert 11<29 16|14b13 19l11 19t25 27s18
+11e29 Level{12|23E9} 16|17m10
+13b7 Pending{boolean} 16|11r10 15r15 18r10
+14e7 Sig_Level{12|23E9} 16|10r10 17r21
+17w4*Handler{7W19} 16|27r10
+20T14*Safety_Task 22l8 22e19 24r14 16|22b14 39l8 39t19
+24t4*Monitor{20T14}
+X 16 safety_monitor.adb
+14e29 Level{12|23E9}
+23e7 Received_Level{12|23E9} 27m34 29r15
+X 17 system.ads
+37K9*System 15|2w6 8r34 21r24 17|155e11
+108I12*Any_Priority{integer}
+109I12*Priority{108I12} 15|21r31
+110I12*Interrupt_Priority{108I12} 15|8r41
+X 33 s-stausa.ads
+206U14*Initialize 207i<c,__gnat_stack_usage_initialize>22
+265U14*Output_Results 269i<c,__gnat_stack_usage_output_results>22
+

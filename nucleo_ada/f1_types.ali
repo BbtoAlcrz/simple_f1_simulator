@@ -1,0 +1,91 @@
+V "GNAT Lib v16"
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+
+U f1_types%s		f1_types.ads		3340da89 EE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+
+D ada.ads		20260501130736 76789da1 ada%s
+D a-except.ads		20260501130736 8699d7ff ada.exceptions%s
+D a-reatim.ads		20260501130736 d11673fd ada.real_time%s
+D a-unccon.ads		20260501130736 0e9b276f ada.unchecked_conversion%s
+D f1_types.ads		20260622231500 e256a974 f1_types%s
+D interfac.ads		20260501130736 9111f9c1 interfaces%s
+D i-c.ads		20260501130736 dbdd3be7 interfaces.c%s
+D system.ads		20260501130736 e2b7c99d system%s
+D s-atacco.ads		20260501130736 5868e3ba system.address_to_access_conversions%s
+D s-c_time.ads		20260501130736 e502d0c0 system.c_time%s
+D s-exctab.ads		20260501130736 91bef6ef system.exception_table%s
+D s-linux.ads		20260501130736 96312dab system.linux%s
+D s-multip.ads		20260501130736 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20260501130736 8f610562 system.os_constants%s
+D s-osinte.ads		20260501130736 bfc41750 system.os_interface%s
+D s-oslock.ads		20260501130736 13fa6b78 system.os_locks%s
+D s-parame.ads		20260501130736 a1aeab5c system.parameters%s
+D s-secsta.ads		20260501130736 578279f5 system.secondary_stack%s
+D s-soflin.ads		20260501130736 5d88fdea system.soft_links%s
+D s-stache.ads		20260501130736 0b81c1fe system.stack_checking%s
+D s-stausa.ads		20260501130736 f470ae2d system.stack_usage%s
+D s-stalib.ads		20260501130736 1c9580f6 system.standard_library%s
+D s-stoele.ads		20260501130736 ccded4e8 system.storage_elements%s
+D s-tasinf.ads		20260501130736 528dde74 system.task_info%s
+D s-taspri.ads		20260501130736 4fd5ef41 system.task_primitives%s
+D s-taprop.ads		20260501130736 6a572f54 system.task_primitives.operations%s
+D s-taskin.ads		20260501130736 e3b5765b system.tasking%s
+D s-traent.ads		20260501130736 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20260501130736 fa2a7f59 system.unsigned_types%s
+G a e
+G c Z s s [telemetryrecordIP f1_types 13 9 none]
+G c Z s s [TtelemetryarrayBIP f1_types 20 4 none]
+G c Z s s [threshold_recordIP f1_types 26 9 none]
+G c Z s s [Tthreshold_mapBIP f1_types 31 4 none]
+X 1 ada.ads
+18K9*Ada 22e8 5|1r6 1r25
+X 3 a-reatim.ads
+46K13*Real_Time 193e18 5|1w10 1r29
+57O9*Time<duration> 5|14r19
+62O9*Time_Span<duration> 5|37r33 38r33 39r33 40r33
+127V13*Milliseconds{62O9} 5|37s46 38s46 39s46 40s46
+X 5 f1_types.ads
+3K9*F1_Types 42l5 42e13
+6E9*Sensor_Id 8e53 15r19 20r34 31r33
+7n7*ENGINE_TEMP{6E9}
+7n20*TYRE_FL{6E9}
+7n29*TYRE_FR{6E9}
+7n38*TYRE_RL{6E9}
+7n47*TYRE_RR{6E9}
+8n7*BRAKE_PRESSURE{6E9}
+8n23*FUEL_FLOW{6E9}
+8n34*G_FORCE{6E9}
+8n43*GPS_SPEED{6E9}
+10F9*Sensor_Value<float> 16r19 27r21 28r21
+13R9*TelemetryRecord 18e14 20r48
+14o7*Timestamp{3|57O9}
+15e7*Sensor{6E9}
+16f7*Value{10F9}
+17b7*Valid{boolean}
+20A9*TelemetryArray(13R9)<6E9>
+23E9*Alert_Level 23e61
+23n25*NORMAL{23E9}
+23n33*WARNING{23E9}
+23n42*CRITICAL{23E9}
+23n52*FAILSAFE{23E9}
+26R9*Threshold_Record 29e14 31r47
+27f7*Upper_Limit{10F9}
+28f7*Lower_Limit{10F9}
+31A9*Threshold_Map(26R9)<6E9>
+34A12*Alert_String{string}<integer>
+37o4*SENSOR_DEADLINE{3|62O9}
+38o4*ALERT_DEADLINE{3|62O9}
+39o4*FAILSAFE_DEADLINE{3|62O9}
+40o4*COMM_PERIOD{3|62O9}
+X 21 s-stausa.ads
+206U14*Initialize 207i<c,__gnat_stack_usage_initialize>22
+265U14*Output_Results 269i<c,__gnat_stack_usage_output_results>22
+
