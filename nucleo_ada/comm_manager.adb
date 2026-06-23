@@ -38,9 +38,11 @@ package body Comm_Manager is
       end Armar_JSON_Volante;
 
       function Armar_JSON_Ingeniero return String is
+         Stat : String := (if Metrics_DB.Stats.Get_Status = NORMAL then """NORMAL""" else """CRITICAL""");
       begin
          return "{""TEP"":" & Integer'Image(Metrics_DB.Stats.Get_TEP_us) &
-                ",""TRP"":" & Integer'Image(Metrics_DB.Stats.Get_TRP_us) & "}";
+                ",""TRP"":" & Integer'Image(Metrics_DB.Stats.Get_TRP_us) &
+                ",""STATUS"":" & Stat & "}";
       end Armar_JSON_Ingeniero;
       
    begin

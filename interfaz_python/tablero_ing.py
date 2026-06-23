@@ -53,10 +53,26 @@ def actualizar_metricas_gui(metricas):
     lbl_tep_val.config(text=f"{metricas.get('TEP', 0)} microsegundos")
     lbl_trp_val.config(text=f"{metricas.get('TRP', 0)} microsegundos")
 
+    # ¡Lógica nueva para la alerta visual del ingeniero!
+    estado = metricas.get("STATUS", "NORMAL")
+    if estado == "CRITICAL":
+        frame_alerta.config(bg=ACCENT_RED)
+        lbl_alerta.config(text="¡ALERTA MGU: FALLA CRÍTICA!", bg=ACCENT_RED, fg="#11111b")
+    else:
+        frame_alerta.config(bg=BG_COLOR)
+        lbl_alerta.config(text="SISTEMA NOMINAL", bg=BG_COLOR, fg=ACCENT_GREEN)
+
 root = tk.Tk()
 root.title("Pit Wall - Control de Ingeniero")
-root.geometry("500x650")
+root.geometry("500x700") # Un poquito más alto para que entre la alerta
 root.configure(bg=BG_COLOR)
+
+# --- NUEVO PANEL DE ALERTA ---
+frame_alerta = tk.Frame(root, bg=BG_COLOR, pady=10)
+frame_alerta.pack(fill="x")
+lbl_alerta = tk.Label(frame_alerta, text="SISTEMA NOMINAL", font=FONT_TITLE, bg=BG_COLOR, fg=ACCENT_GREEN)
+lbl_alerta.pack()
+# -----------------------------
 
 frame_controles = tk.Frame(root, bg=BG_COLOR)
 frame_controles.pack(fill="x", padx=20, pady=5)
@@ -77,7 +93,7 @@ slider_tyres = crear_slider("Temp Neumáticos (°C)", 50.0, 130.0, 90.0)
 slider_brakes = crear_slider("Presión Frenos (Bar)", 0.0, 180.0, 50.0)
 slider_g = crear_slider("Fuerza G", -8.0, 8.0, 0.0)
 
-tk.Button(root, text=" SIMULAR FALLA CRÍTICA ", font=FONT_TITLE, bg=ACCENT_RED, fg="#11111b", relief="flat", command=forzar_falla).pack(pady=10)
+tk.Button(root, text="  SIMULAR FALLA CRÍTICA ", font=FONT_TITLE, bg=ACCENT_RED, fg="#11111b", relief="flat", command=forzar_falla).pack(pady=10)
 
 frame_metricas = tk.Frame(root, bg=PANEL_BG, bd=2, relief="ridge", pady=10)
 frame_metricas.pack(fill="x", padx=20, pady=5)
